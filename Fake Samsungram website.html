@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Instagram Post</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 400px;
+            background-color: #fff;
+            border: 1px solid #dbdbdb;
+            border-radius: 3px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .header img {
+            width: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .header .user {
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .header .dots {
+            margin-left: auto;
+            cursor: pointer;
+        }
+
+        /* Image Section */
+        .image {
+            width: 100%;
+        }
+
+        .image img {
+            width: 100%;
+            display: block;
+        }
+
+        /* Action Buttons */
+        .actions {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .actions img {
+            width: 25px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .actions .left img {
+            display: inline-block;
+        }
+
+        /* Like and Comment Count */
+        .likes, .caption {
+            padding: 0 10px;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .likes {
+            font-weight: bold;
+        }
+
+        .caption span {
+            font-weight: bold;
+        }
+
+        /* Comment Section */
+        .comments {
+            padding: 0 10px;
+            color: gray;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+        /* Footer Input */
+        .footer {
+            border-top: 1px solid #dbdbdb;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        .footer input {
+            border: 1px solid #dbdbdb;
+            outline: none;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .footer button {
+            background-color: #0095f6;
+            color: white;
+            border: none;
+            padding: 8px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .footer button:hover {
+            background-color: #0077c5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <img src="fake logo.png" alt="Profile Picture">
+            <div class="user">Galaxy AI</div>
+            <div class="dots">⋮</div>
+        </div>
+
+        <!-- Image Section -->
+        <div class="image">
+            <img src="Fake Instagram Image.png" alt="Post Image">
+        </div>
+
+        <!-- Actions -->
+        <div class="actions">
+            <div class="left">
+                <img src="https://img.icons8.com/ios/50/like--v1.png" alt="Like">
+                <img src="https://img.icons8.com/ios/50/speech-bubble--v1.png" alt="Comment">
+              <img src="https://img.icons8.com/ios/50/sent--v1.png" alt="Share">
+            </div>
+            <div class="right"> </div>
+        </div>
+
+        <!-- Like Count -->
+        <div class="likes">45,100 likes</div>
+
+        <!-- Caption -->
+        <div class="caption">
+            <span>Galaxy AI</span> Gyeongbokgung Palace in Seoul, South Korea
+        </div>
+
+        <!-- Comment Section -->
+        <div class="comments">View all 290 comments</div>
+
+        <!-- Footer with Submit Button -->
+        <div class="footer">
+            <form action="../thanks.html" method="GET">
+                <input type="text" placeholder="Add a comment..." name="comment" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
